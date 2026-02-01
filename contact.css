@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  header {
+    background: #1f338f;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.navbar li {
+    margin: 0 10px;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    background: #141624;
+    border-radius: 5px;
+}
+.navbar a:hover {
+    background: #777;
+}
+  
+  /* Contact Us Section */
+  #contact-us {
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+  }
+  
+  #contact-us h1 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+  }
+  
+  .contact-details div {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Section */
+  #contact-form {
+    padding: 20px;
+    background-color: #eef2f3;
+    text-align: center;
+  }
+  
+  #contact-form h2 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .image-container img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  form label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer .footer-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  footer .footer-content ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  footer .footer-content ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer .footer-content ul li a:hover {
+    text-decoration: underline;
+  }
+  

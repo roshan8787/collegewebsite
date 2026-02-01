@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting and Finance - Academic and Educational</title>
+    <link rel="stylesheet" href="accounting.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="co-curricular.html">Co-curricular</a></li>
+                <li><a href="accounting.html">Accounting</a></li>
+                <li><a href="career.html">Career Pathways</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <h1>Accounting and Finance</h1>
+            <p><strong>Master the language of business and finance with us.</strong></p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Introduction Section -->
+        <section class="intro-section">
+            <h2>Why Study Accounting and Finance?</h2>
+            <p>
+                Accounting and finance are the backbone of every successful business. Learn how to manage budgets, track expenses, and understand key financial concepts that will prepare you for a career in the corporate world or help you manage your personal finances.
+            </p>
+        </section>
+
+        <!-- Financial Tips Section -->
+        <section class="tips-section">
+            <h2>Financial Tips for Beginners</h2>
+            <ul class="financial-tips">
+                <li>Always keep track of your expenses.</li>
+                <li>Learn the basics of budgeting and saving.</li>
+                <li>Understand the concept of compound interest.</li>
+                <li>Invest wisely and start early.</li>
+                <li>Build an emergency fund for unforeseen situations.</li>
+            </ul>
+        </section>
+
+        <!-- Interest Calculator -->
+        <section class="calculator-section">
+            <h2>Simple Interest Calculator</h2>
+            <p>Use this tool to calculate the interest on your savings or loans:</p>
+            <form id="interest-calculator">
+                <input type="number" id="principal" placeholder="Principal Amount (₹)" required>
+                <input type="number" id="rate" placeholder="Annual Interest Rate (%)" required>
+                <input type="number" id="time" placeholder="Time (Years)" required>
+                <button type="button" onclick="calculateInterest()">Calculate</button>
+            </form>
+            <p id="calc-result" class="result"></p>
+        </section>
+
+       
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sky Up University Resources. All rights reserved.</p>
+    </footer>
+</body>
+</html>

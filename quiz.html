@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz and Practice Tests</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="co-curricular.html">Co-curricular</a></li>
+                <li><a href="accounting.html">Accounting</a></li>
+                <li><a href="career.html">Career Pathways</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <h1>Quiz and Practice Tests</h1>
+            <p><strong>Test your knowledge and sharpen your skills with our interactive quizzes and practice tests.</strong></p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Quiz Section -->
+        <section class="quiz-section">
+            <h2>🚀 Quick Quiz</h2>
+            <p>🧠 Ready to challenge yourself? Answer these quick questions to test your knowledge!</p>
+            <form id="quiz-form">
+                <div class="quiz-question">
+                    <p><strong>1. What is 5 + 3?</strong></p>
+                    <label><input type="radio" name="q1" value="6"> 6</label><br>
+                    <label><input type="radio" name="q1" value="8"> 8</label><br>
+                    <label><input type="radio" name="q1" value="10"> 10</label>
+                </div>
+                <div class="quiz-question">
+                    <p><strong>2. What is the capital of France?</strong></p>
+                    <label><input type="radio" name="q2" value="London"> London</label><br>
+                    <label><input type="radio" name="q2" value="Paris"> Paris</label><br>
+                    <label><input type="radio" name="q2" value="Berlin"> Berlin</label>
+                </div>
+                <div class="quiz-question">
+                    <p><strong>3. Which programming language is primarily used for web development?</strong></p>
+                    <label><input type="radio" name="q3" value="Python"> Python</label><br>
+                    <label><input type="radio" name="q3" value="JavaScript"> JavaScript</label><br>
+                    <label><input type="radio" name="q3" value="C++"> C++</label>
+                </div>
+                <button type="button" onclick="checkAnswers()">✔️ Submit Quiz</button>
+            </form>
+            <p id="quiz-result" class="result"></p>
+        </section>
+        
+        <section class="practice-section">
+            <h2>🎯 Practice Tests</h2>
+            <p>📚 Choose a test and start mastering your skills in a fun and interactive way!</p>
+            <div class="test-container">
+                <div class="test-card">
+                    <h3>📐 Mathematics Test</h3>
+                    <p>Challenge yourself with advanced mathematical problems.</p>
+                    <a href="mathematics.html" class="test-link">Start Test</a>
+                </div>
+                <div class="test-card">
+                    <h3>💻 Programming Test</h3>
+                    <p>Enhance your coding skills with programming questions.</p>
+                    <a href="programming.html" class="test-link">Start Test</a>
+                </div>
+                <div class="test-card">
+                    <h3>🌍 General Knowledge Test</h3>
+                    <p>Test your knowledge across a variety of subjects.</p>
+                    <a href="#" class="test-link">Start Test</a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Academic and Educational Resources. All rights reserved.</p>
+    </footer>
+</body>
+</html>

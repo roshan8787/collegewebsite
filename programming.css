@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background: #2b3e5c;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.navbar li {
+    margin: 0 10px;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    background: #555;
+    border-radius: 5px;
+}
+.navbar a:hover {
+    background: #777;
+}
+
+/* Banner */
+.banner {
+    background: url('images/background.jpg') no-repeat center center/cover;
+    color: rgb(12, 10, 10);
+    padding: 10rem 0;
+}
+
+
+/* Section Styling */
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 900px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+section h2 {
+    font-size: 1.8rem;
+    color: #2196F3;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+section p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Programming Languages List */
+.programming-languages {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.programming-languages li {
+    background: #f3f3f3;
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    flex: 1 1 45%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.programming-languages li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Video Section */
+video {
+    display: block;
+    margin: 1rem auto;
+    border: 2px solid #2196F3;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+video:hover {
+    border-color: #4CAF50;
+}
+
+/* Quiz Section */
+#quiz-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+#quiz-form input {
+    margin-right: 10px;
+}
+#quiz-form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+#quiz-form button:hover {
+    background: #2196F3;
+    transform: scale(1.05);
+}
+.result {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+
+
+

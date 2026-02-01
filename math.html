@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematics - Academic and Educational</title>
+    <link rel="stylesheet" href="math.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programming.html">Programming</a></li>
+                <li><a href="mathematics.html">Mathematics</a></li>
+                <li><a href="co-curricular.html">Co-curricular</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <h1>Mathematics</h1>
+            <p><strong>Unlock the power of logic and problem-solving.</strong></p>
+        </div>
+    </header>
+    <main>
+        <!-- Introduction Section -->
+        <section>
+            <h2>About Mathematics</h2>
+            <p>
+                Mathematics is the foundation of science, engineering, and technology. It equips us with problem-solving skills and the ability to think critically. From simple arithmetic to advanced calculus, math shapes the world around us.
+            </p>
+        </section><br>
+
+        <!-- Importance of Mathematics -->
+        <section>
+            <h2>Why Study Mathematics?</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/problem_solving.jpg" alt="Problem Solving">
+                    <h3>Problem-Solving</h3>
+                    <p>Learn to approach complex problems with logical solutions.</p>
+                </div>
+                <div class="card">
+                    <img src="images/critical_thinking.jpg" alt="Critical Thinking">
+                    <h3>Critical Thinking</h3>
+                    <p>Develop analytical skills to understand and interpret data.</p>
+                </div>
+                <div class="card">
+                    <img src="images/real_world.jpg" alt="Real World Applications">
+                    <h3>Real-World Applications</h3>
+                    <p>Apply mathematical principles in fields like finance, engineering, and science.</p>
+                </div>
+            </div>
+        </section>
+        <br>
+
+
+
+        <!-- Interactive Calculator -->
+        <section>
+            <h2>Interactive Calculator</h2>
+            <div class="calculator">
+                <div class="display">
+                    <input type="text" id="calc-input" placeholder="0" readonly>
+                </div>
+                <div class="buttons">
+                    <button onclick="clearCalc()">Clear</button>
+                    <button onclick="deleteLast()">Del</button>
+                    <button onclick="appendCalcValue('%')">%</button>
+                    <button onclick="appendCalcValue('/')">÷</button>
+                    <button onclick="appendCalcValue('7')">7</button>
+                    <button onclick="appendCalcValue('8')">8</button>
+                    <button onclick="appendCalcValue('9')">9</button>
+                    <button onclick="appendCalcValue('*')">×</button>
+                    <button onclick="appendCalcValue('4')">4</button>
+                    <button onclick="appendCalcValue('5')">5</button>
+                    <button onclick="appendCalcValue('6')">6</button>
+                    <button onclick="appendCalcValue('-')">−</button>
+                    <button onclick="appendCalcValue('1')">1</button>
+                    <button onclick="appendCalcValue('2')">2</button>
+                    <button onclick="appendCalcValue('3')">3</button>
+                    <button onclick="appendCalcValue('+')">+</button>
+                    <button onclick="appendCalcValue('0')">0</button>
+                    <button onclick="appendCalcValue('.')">.</button>
+                    <button class="equal" onclick="calculate()">=</button>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Math Quiz -->
+        <section>
+            <h2>Challenge Yourself with Math Puzzles</h2>
+            <div class="math-puzzle">
+                <p id="puzzle-question">Press the button to generate a new math puzzle!</p>
+                <input type="number" id="puzzle-answer" placeholder="Enter your answer">
+                <button onclick="checkPuzzle()">Submit</button>
+                <p id="puzzle-result" class="result"></p>
+                <button onclick="generatePuzzle()">New Puzzle</button>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Sky Up University Resources</p>
+    </footer>
+</body>
+</html>

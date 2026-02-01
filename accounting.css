@@ -1,0 +1,195 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    list-style: none;
+    background: linear-gradient(to right, #4CAF50, #2d8d45);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.navbar li {
+    margin: 0;
+}
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 25px;
+    display: block;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.navbar li a:hover, .navbar li a.active {
+    background-color: #2196F3;
+    transform: scale(1.1);
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(135deg, #70b370, #6dd5ed);
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.banner h1 {
+    font-size: 3rem;
+    animation: fadeInDown 1.5s;
+}
+.banner p {
+    font-size: 1.5rem;
+    font-style: italic;
+    animation: fadeInUp 1.5s;
+}
+
+/* Section Styling */
+section {
+    padding: 30px;
+    margin: 20px;
+    background: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+section:hover {
+    transform: translateY(-5px);
+}
+h2 {
+    color: #2d8d45;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    border-bottom: 3px solid #4CAF50;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Tips Section */
+.financial-tips {
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.8;
+}
+.financial-tips li {
+    margin-bottom: 10px;
+    background: #f1f8e9;
+    padding: 10px 15px;
+    border-left: 5px solid #4CAF50;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    animation: fadeIn 1s ease;
+}
+
+/* Calculator Section */
+.calculator-section form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+}
+.calculator-section input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 250px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.calculator-section input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
+.calculator-section button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    background: linear-gradient(135deg, #4CAF50, #2d8d45);
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+}
+.calculator-section button:hover {
+    background: linear-gradient(135deg, #2d8d45, #4CAF50);
+    transform: scale(1.05);
+}
+.result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* Video Section */
+.video-section {
+    text-align: center;
+}
+.video-section video {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.video-section video:hover {
+    transform: scale(1.05);
+}
+.video-section p {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

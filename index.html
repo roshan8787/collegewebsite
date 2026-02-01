@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic and Educational</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="co-curricular.html">Co-curricular</a></li>
+                <li><a href="accounting.html">Accounting</a></li>
+                <li><a href="career.html">Career Pathways</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <h1>Welcome to Sky Up University</h1>
+            <p><strong>Your hub for learning and skill development.</strong></p>
+            <button class="cta-button" onclick="scrollToSection('about')">Get Started</button>
+        </div>
+    </header>
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                Sky Up University is your go-to platform for enhancing your skills in diverse fields such as programming, mathematics, and linguistics. 
+                Our goal is to empower students and professionals by providing valuable resources, tutorials, and interactive learning experiences.
+            </p>
+        </section>
+
+        <!-- Features Section -->
+        <section>
+            <h2>What We Offer</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/programming.png" alt="Programming">
+                    <h3>Programming</h3>
+                    <p>Master coding skills with our tutorials and projects.</p>
+                    <a href="programming.html" class="btn">Learn More</a>
+                </div>
+                <div class="card">
+                    <img src="images/mathematics.jpg" alt="Mathematics">
+                    <h3>Mathematics</h3>
+                    <p>Sharpen your problem-solving abilities and logical thinking.</p>
+                    <a href="math.html" class="btn">Learn More</a>
+                </div>
+                <div class="card">
+                    <img src="images/co-curricular.jfif" alt="co-curricular">
+                    <h3>Co-curricular</h3>
+                    <p>Explore and improve various skills.</p>
+                    <a href="co-curricular.html" class="btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section>
+            <h2>What Our Users Say</h2>
+            <div class="testimonials">
+                <blockquote>
+                    <p>"This platform has transformed the way I learn programming. The tutorials are clear and concise!"</p>
+                    <cite>- Alex, Computer Science Student</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"I finally understand complex math concepts thanks to the step-by-step guides."</p>
+                    <cite>- Maria, Engineering Student</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"The linguistics section helped me improve my communication skills significantly!"</p>
+                    <cite>- John, Linguistics Enthusiast</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Interactive Section -->
+        <section>
+            <h2>Take a Quick Quiz</h2>
+            <p>Test your knowledge with this fun quiz:</p>
+            <form id="home-quiz">
+                <p>What is 5 + 3?</p>
+                <input type="radio" name="quiz" value="8"> 8<br>
+                <input type="radio" name="quiz" value="10"> 10<br>
+                <input type="radio" name="quiz" value="12"> 12<br>
+                <button type="button" onclick="checkHomeQuiz()">Submit</button>
+            </form>
+            <p id="home-quiz-result" class="result"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sky Up University Resources</p>
+    </footer>
+</body>
+</html>
